@@ -79,3 +79,6 @@ gem install --local --install-dir %{buildroot}%{gem_dir} \
 * Fri Apr 04 2014 Dominic Cleal <dcleal@redhat.com> 0.1.2-1
 - new package built with tito
 
+* Fri Apr 04 2014 Dominic Cleal <dcleal@redhat.com> 0.1.2-1
+- new package built with tito
+
