@@ -17,7 +17,7 @@
 Summary: Scripting framework that replaces rake, sake and rubigen
 Name: %{?scl_prefix}rubygem-%{gem_name}
 Version: 0.15.4
-Release: 6%{?dist}
+Release: 7%{?dist}
 Group: Development/Languages
 License: MIT
 URL: http://github.com/wycats/thor
@@ -115,6 +115,9 @@ popd
 %{gem_instdir}/thor.gemspec
 
 %changelog
+* Fri Apr 04 2014 Dominic Cleal <dcleal@redhat.com> 0.15.4-7
+- Rebuild for new tito repo import
+
 * Fri Jan 17 2014 Dominic Cleal <dcleal@redhat.com> 0.15.4-6
 - Add build support for EL6 non-SCL (dcleal@redhat.com)
 - remove empty tito.props and definition which are duplicate with default from
