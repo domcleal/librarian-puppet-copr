@@ -69,6 +69,9 @@ find %{buildroot}%{gem_instdir}/bin -type f | xargs chmod a+x
 %doc %{gem_instdir}/README.md
 
 %changelog
+* Fri Apr 04 2014 Dominic Cleal <dcleal@redhat.com> 0.9.17-1
+- Update to 0.9.17
+
 * Fri Jan 17 2014 Dominic Cleal <dcleal@redhat.com> 0.9.10-3
 - Correct rubygem-thor dependency (dcleal@redhat.com)
 
