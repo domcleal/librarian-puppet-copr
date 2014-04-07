@@ -21,7 +21,7 @@ Release: 7%{?dist}
 Group: Development/Languages
 License: MIT
 URL: http://github.com/wycats/thor
-Source0: http://rubygems.org/download/%{gem_name}-%{version}.gem
+Source0: http://rubygems.org/downloads/%{gem_name}-%{version}.gem
 Requires: %{?scl_prefix}ruby(rubygems)
 Requires: %{?scl_prefix}ruby(abi)
 Requires: %{?scl_prefix}rubygem(rake)
