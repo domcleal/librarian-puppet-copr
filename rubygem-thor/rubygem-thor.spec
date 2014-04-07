@@ -17,7 +17,7 @@
 Summary: Scripting framework that replaces rake, sake and rubigen
 Name: %{?scl_prefix}rubygem-%{gem_name}
 Version: 0.15.4
-Release: 7%{?dist}
+Release: 8%{?dist}
 Group: Development/Languages
 License: MIT
 URL: http://github.com/wycats/thor
@@ -115,6 +115,9 @@ popd
 %{gem_instdir}/thor.gemspec
 
 %changelog
+* Mon Apr 07 2014 Dominic Cleal <dcleal@redhat.com> 0.15.4-8
+- Fix source rubygems URL (dcleal@redhat.com)
+
 * Fri Apr 04 2014 Dominic Cleal <dcleal@redhat.com> 0.15.4-7
 - Rebuild for new tito repo import
 
