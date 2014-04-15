@@ -69,6 +69,9 @@ find %{buildroot}%{gem_instdir}/bin -type f | xargs chmod a+x
 %doc %{gem_instdir}/README.md
 
 %changelog
+* Mon Apr 14 2014 Dominic Cleal <dcleal@redhat.com> 1.0.1-1
+- Update to 1.0.1 (dcleal@redhat.com)
+
 * Fri Apr 04 2014 Dominic Cleal <dcleal@redhat.com> 0.9.17-1
 - Update to 0.9.17
 
