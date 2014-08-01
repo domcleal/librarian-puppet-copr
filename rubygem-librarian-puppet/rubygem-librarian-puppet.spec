@@ -5,7 +5,7 @@
 
 Summary: Bundler for your Puppet modules
 Name: %{?scl_prefix}rubygem-%{gem_name}
-Version: 1.0.5
+Version: 1.0.6
 Release: 1%{?dist}
 Group: Development/Languages
 License: MIT
