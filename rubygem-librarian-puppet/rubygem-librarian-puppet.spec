@@ -6,7 +6,7 @@
 Summary: Bundler for your Puppet modules
 Name: %{?scl_prefix}rubygem-%{gem_name}
 Version: 1.0.9
-Release: 1%{?dist}
+Release: 2%{?dist}
 Group: Development/Languages
 License: MIT
 URL: https://github.com/rodjek/librarian-puppet
@@ -73,6 +73,9 @@ find %{buildroot}%{gem_instdir}/bin -type f | xargs chmod a+x
 %doc %{gem_instdir}/README.md
 
 %changelog
+* Tue Sep 16 2014 Dominic Cleal <dcleal@redhat.com> 1.0.9-2
+- Require ruby(release) on EL7/Fedora (dcleal@redhat.com)
+
 * Mon Aug 18 2014 Dominic Cleal <dcleal@redhat.com> 1.0.9-1
 - Update to 1.0.9 (dcleal@redhat.com)
 
