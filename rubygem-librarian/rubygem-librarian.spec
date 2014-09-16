@@ -6,7 +6,7 @@
 Summary: A Framework for Bundlers
 Name: %{?scl_prefix}rubygem-%{gem_name}
 Version: 0.1.2
-Release: 1%{?dist}
+Release: 2%{?dist}
 Group: Development/Languages
 License: MIT
 URL: https://github.com/applicationsonline/librarian
@@ -80,5 +80,9 @@ gem install --local --install-dir %{buildroot}%{gem_dir} \
 %exclude %{gem_instdir}/*.gemspec
 
 %changelog
+* Tue Sep 16 2014 Dominic Cleal <dcleal@redhat.com> 0.1.2-2
+- Tidy changelog (dcleal@redhat.com)
+- Require ruby(release) on EL7/Fedora (dcleal@redhat.com)
+
 * Fri Apr 04 2014 Dominic Cleal <dcleal@redhat.com> 0.1.2-1
 - new package built with tito
