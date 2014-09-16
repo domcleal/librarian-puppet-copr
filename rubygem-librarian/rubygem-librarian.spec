@@ -13,7 +13,11 @@ URL: https://github.com/applicationsonline/librarian
 Source0: http://rubygems.org/gems/%{gem_name}-%{version}.gem
 Requires: git
 Requires: %{?scl_prefix}rubygems
+%if 0%{?fedora} > 18 || 0%{?rhel} >= 7
+Requires: %{?scl_prefix}ruby(release)
+%else
 Requires: %{?scl_prefix}ruby(abi)
+%endif
 Requires: %{?scl_prefix}rubygem(thor) >= 0.15
 Requires: %{?scl_prefix}rubygem(thor) < 1
 Requires: %{?scl_prefix}rubygem(highline)

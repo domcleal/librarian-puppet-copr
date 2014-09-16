@@ -14,7 +14,11 @@ Source0: http://rubygems.org/gems/%{gem_name}-%{version}.gem
 Requires: git
 Requires: %{?scl_prefix}puppet
 Requires: %{?scl_prefix}rubygems
+%if 0%{?fedora} > 18 || 0%{?rhel} >= 7
+Requires: %{?scl_prefix}ruby(release)
+%else
 Requires: %{?scl_prefix}ruby(abi)
+%endif
 Requires: %{?scl_prefix}rubygem(json)
 Requires: %{?scl_prefix}rubygem(librarian) >= 0.1.2
 BuildRequires: %{?scl_prefix}rubygems

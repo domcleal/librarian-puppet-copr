@@ -46,7 +46,7 @@ Source0:   http://rubygems.org/downloads/%{gem_name}-%{version}.gem
 BuildArch: noarch
 Provides:  %{?scl_prefix}rubygem(%{gem_name}) = %{version}
 
-%if 0%{?fedora} > 18
+%if 0%{?fedora} > 18 || 0%{?rhel} >= 7
 Requires:  %{?scl_prefix}ruby(release)
 %else 
 Requires:  %{?scl_prefix}ruby(abi) = %{rubyabi}
@@ -56,7 +56,7 @@ Requires:  %{?scl_prefix}rubygems
 %if 0%{?fedora} || "%{?scl}" == "ruby193"
 BuildRequires: %{?scl_prefix}rubygems-devel
 %endif
-%if 0%{?fedora} > 18
+%if 0%{?fedora} > 18 || 0%{?rhel} >= 7
 BuildRequires: %{?scl_prefix}ruby(release)
 %else
 BuildRequires: %{?scl_prefix}ruby(abi) = %{rubyabi}

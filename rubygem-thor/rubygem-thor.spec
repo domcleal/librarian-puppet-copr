@@ -23,14 +23,22 @@ License: MIT
 URL: http://github.com/wycats/thor
 Source0: http://rubygems.org/downloads/%{gem_name}-%{version}.gem
 Requires: %{?scl_prefix}ruby(rubygems)
+%if 0%{?fedora} > 18 || 0%{?rhel} >= 7
+Requires: %{?scl_prefix}ruby(release)
+%else
 Requires: %{?scl_prefix}ruby(abi)
+%endif
 Requires: %{?scl_prefix}rubygem(rake)
 Requires: %{?scl_prefix}rubygem(diff-lcs)
 %if "%{?scl}" == "ruby193" || 0%{?rhel} > 6 || 0%{?fedora} > 16
 BuildRequires: %{?scl_prefix}rubygems-devel
 %endif
 BuildRequires: %{?scl_prefix}rubygems
+%if 0%{?fedora} > 18 || 0%{?rhel} >= 7
+BuildRequires: %{?scl_prefix}ruby(release)
+%else
 BuildRequires: %{?scl_prefix}ruby(abi)
+%endif
 %if "%{?scl}" == "ruby193" || 0%{?rhel} > 6 || 0%{?fedora} > 16
 BuildRequires: %{?scl_prefix}rubygem(rspec)
 BuildRequires: %{?scl_prefix}rubygem(rake)
