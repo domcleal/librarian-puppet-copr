@@ -39,7 +39,7 @@ BuildRequires: %{?scl_prefix}ruby(release)
 %else
 BuildRequires: %{?scl_prefix}ruby(abi)
 %endif
-%if "%{?scl}" == "ruby193" || 0%{?rhel} > 6 || 0%{?fedora} > 16
+%if "%{?scl}" == "ruby193" || 0%{?fedora} > 16
 BuildRequires: %{?scl_prefix}rubygem(rspec)
 BuildRequires: %{?scl_prefix}rubygem(rake)
 BuildRequires: %{?scl_prefix}rubygem(rdoc)
@@ -92,7 +92,7 @@ find %{buildroot}%{gem_instdir}/bin -type f | \
 rm -rf %{buildroot}
 
 %check
-%if "%{?scl}" == "ruby193" || 0%{?rhel} > 6 || 0%{?fedora} > 16
+%if "%{?scl}" == "ruby193" || 0%{?fedora} > 16
 pushd %{buildroot}%{gem_instdir}
 # kill simplecov dependency
 sed -i '3,7d' spec/spec_helper.rb
