@@ -36,7 +36,7 @@
 
 Name:      %{?scl_prefix}rubygem-%{gem_name}
 Version:   %{_version}
-Release:   2%{?dist}  
+Release:   2.1%{?dist}  
 Summary:   %{_summary}
 Group:     Development/Languages
 License:   %{_license}
@@ -122,6 +122,9 @@ cp -a .%{gem_dir}/* %{buildroot}%{gem_dir}
 %{gem_dir}/specifications/%{gem_name}-%{version}.gemspec
 
 %changelog
+* Tue Sep 16 2014 Dominic Cleal <dcleal@redhat.com> 1.6.20-2.1
+- Require ruby(release) on EL7/Fedora (dcleal@redhat.com)
+
 * Mon Nov 18 2013 Marek Hulan <mhulan@redhat.com> 1.6.20-2
 - SCLize highline (mhulan@redhat.com)
 
