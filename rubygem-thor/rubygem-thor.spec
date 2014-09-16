@@ -17,7 +17,7 @@
 Summary: Scripting framework that replaces rake, sake and rubigen
 Name: %{?scl_prefix}rubygem-%{gem_name}
 Version: 0.15.4
-Release: 9%{?dist}
+Release: 10%{?dist}
 Group: Development/Languages
 License: MIT
 URL: http://github.com/wycats/thor
@@ -123,6 +123,9 @@ popd
 %{gem_instdir}/thor.gemspec
 
 %changelog
+* Tue Sep 16 2014 Dominic Cleal <dcleal@redhat.com> 0.15.4-10
+- Disable tests on el7, missing deps (dcleal@redhat.com)
+
 * Tue Sep 16 2014 Dominic Cleal <dcleal@redhat.com> 0.15.4-9
 - Require ruby(release) on EL7/Fedora (dcleal@redhat.com)
 
