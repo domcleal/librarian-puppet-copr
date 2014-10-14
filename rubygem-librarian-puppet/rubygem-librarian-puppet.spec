@@ -5,8 +5,8 @@
 
 Summary: Bundler for your Puppet modules
 Name: %{?scl_prefix}rubygem-%{gem_name}
-Version: 1.0.9
-Release: 2%{?dist}
+Version: 1.4.0
+Release: 1%{?dist}
 Group: Development/Languages
 License: MIT
 URL: https://github.com/rodjek/librarian-puppet
@@ -21,6 +21,7 @@ Requires: %{?scl_prefix}ruby(abi)
 %endif
 Requires: %{?scl_prefix}rubygem(json)
 Requires: %{?scl_prefix}rubygem(librarian) >= 0.1.2
+Requires: %{?scl_prefix}rubygem(rsync)
 BuildRequires: %{?scl_prefix}rubygems
 BuildRequires: %{?scl_prefix}rubygems-devel
 
