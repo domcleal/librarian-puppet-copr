@@ -65,3 +65,6 @@ gem install --local --install-dir %{buildroot}%{gem_dir} \
 %{gem_instdir}/spec
 
 %changelog
+* Tue Oct 14 2014 Dominic Cleal <dcleal@redhat.com> 1.0.9-1
+- new package built with tito
+
